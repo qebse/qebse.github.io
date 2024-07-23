@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <title>登录·OtherSide</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 20px;
+                text-align: center;
+            }
+            h1 {
+                margin-bottom: 20px;
+            }
+            input[type="text"],
+            input[type="password"] {
+                padding: 10px;
+                margin-bottom: 10px;
+                width: 250px;
+                font-size: 16px;
+            }
+            input[type="submit"] {
+                padding: 10px 20px;
+                font-size: 16px;
+                background-color: #4CAF50;
+                color: #fff;
+                border: none;
+                cursor: pointer;
+            }
+            input[type="button"] {
+                padding: 10px 20px;
+                font-size: 16px;
+                background-color: #4CAF50;
+                color: #fff;
+                border: none;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>登录</h1>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="用户名" required><br>
+            <input type="password" id="password" placeholder="密码" required><br>
+            <input type="submit" value="登录">
+            <a href="index.html"><input type="button" value="返回"></a>
+        </form>
+        <script>
+            document.getElementById("loginForm").addEventListener("submit", function(event) {
+                event.preventDefault(); // 阻止表单提交
+                var username = document.getElementById("username").value;
+                var password = document.getElementById("password").value;
+                
+                // 在这里可以进行登录验证逻辑，比如向服务器发送登录请求并处理响应
+                
+                // 这里只是简单地在控制台输出登录信息
+                window.alert("抱歉，这个功能暂时还未完成，请返回")
+                console.log("用户名: " + username);
+                console.log("密码: " + password);
+            });
+        </script>
+    </body>
+</html>
