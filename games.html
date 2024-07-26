@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <title>小游戏·OtherSide</title>
+        <style>
+            @font-face {
+                font-family: "OSFont";
+                src:url("./fonts/OSFont.ttf");
+                font-weight: normal;
+                font-style: normal;
+            }
+            body {
+                font-family: OSFont, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f4;
+            }
+            header {
+                background-color: #333;
+                color: white;
+                padding: 10px 20px;
+                text-align: center;
+            }
+            nav {
+                background-color: #555;
+                color: white;
+                padding: 10px 20px;
+                display: flex;
+                justify-content: space-between;
+            }
+            nav a {
+                color: white;
+                text-decoration: none;
+                margin-right: 20px;
+            }
+            nav a:hover {
+                text-decoration: underline;
+            }
+            .container {
+                width: 80%;
+                margin: 20px auto;
+                background-color: white;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            }
+            .form-group {
+                margin-bottom: 15px;
+            }
+            .form-group label {
+                display: block;
+                margin-bottom: 5px;
+            }
+            .form-group input {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+            .form-group button {
+                padding: 10px 20px;
+                background-color: #333;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            .form-group button:hover {
+                background-color: #555;
+            }
+            .forum {
+                margin-top: 20px;
+            }
+            .forum h2 {
+                text-align: center;
+            }
+            .post {
+                background-color: #ddd;
+                margin-bottom: 10px;
+                padding: 10px;
+                border-radius: 5px;
+            }
+            .post h3 {
+                margin-top: 0;
+            }
+            .reply {
+                background-color: #bbb;
+                margin-top: 5px;
+                padding: 5px;
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <header id="top">
+            <h1>OtherSide Studio小游戏</h1>
+        </header>
+        <nav>
+            <a href="./index.html">返回</a>
+        </nav>
+        <div class="container">
+            <h2>游戏</h2>
+            <div class="forum">
+                <div class="post">
+                    <h3><a href="https://mc.js.cool/#game" target="_blank">MinecraftJE网页版</a></h3>
+                    <h3><a href="https://sans.nyaasu.top/" target="_blank">Undertale·Sans战</a></h3>
+                    <h3><a href="https://www.gamepix.com/play/undertale" target="_blank">Undertale网页版</a></h3>
+                    <h3><a href="https://www.minesweeper.cn/" target="_blank">扫雷</a></h3>
+                    <h3><a href="https://sudoku.com/zh" target="_blank">数独</a></h3>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
